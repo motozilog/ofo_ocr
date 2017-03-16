@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/btn_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="图库" />
+
+    <Button
+        android:id="@+id/btn_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="拍照识别" />
+
+    <Button
+        android:id="@+id/btn_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="打开相机" />
+    
+    <Button
+        android:id="@+id/btn_flashLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_preview"
+        android:layout_alignParentRight="true"
+        android:text="闪光" />
+    
+    <SurfaceView
+        android:id="@+id/mSurfaceView1"
+        android:layout_width="720px"
+        android:layout_height="720px"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="320px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mSurfaceView1"
+        android:layout_alignParentRight="true"
+        android:text="请将整个ofo车牌拍下\n(含二维码和7位数字)\n仅供学习，请勿用于非法用途\n目前仅支持7位ofo\n交流QQ:\n780174889\n\n请先打开相机，再拍照识别" />
+    
+    <ImageView 
+        android:id="@+id/image_view"
+        android:layout_width="320px"
+        android:layout_height="320px"
+        android:layout_below="@+id/mSurfaceView1"
+        />
+    
+
+</RelativeLayout>
